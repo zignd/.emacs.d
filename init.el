@@ -20,6 +20,7 @@
 
 (setq-default cursor-type 'bar) 
 (tool-bar-mode -1)
+(show-paren-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
