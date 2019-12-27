@@ -19,6 +19,7 @@
 (global-set-key (kbd "S-<f8>") 'neotree-dir) ; neotree asks for a new dir, defaults current buffer's dir
 
 (setq-default cursor-type 'bar) 
+(tool-bar-mode -1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
