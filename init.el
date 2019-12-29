@@ -20,7 +20,6 @@
 
 (setq-default cursor-type 'bar) 
 (tool-bar-mode -1)
-(window-divider-mode)
 (show-paren-mode)
 
 (custom-set-variables
@@ -75,3 +74,4 @@
 
 (require 'color-theme-sanityinc-tomorrow)
 (color-theme-sanityinc-tomorrow-bright)
+(window-divider-mode)
