@@ -37,7 +37,7 @@
  '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-    (color-theme-sanityinc-tomorrow dracula-theme neotree company cider)))
+    (exec-path-from-shell color-theme-sanityinc-tomorrow dracula-theme neotree company cider)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -76,3 +76,12 @@
 (show-paren-mode)
 (electric-pair-mode)
 (window-divider-mode)
+
+; in mac os there's an issue regarding reading environment variables
+; this function ensures the environemnt variables available in the shell
+; will also be available to emacs at runtime
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
