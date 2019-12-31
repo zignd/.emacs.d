@@ -18,10 +18,6 @@
 (global-set-key [f8] 'neotree-toggle) ; opens and closes neotree
 (global-set-key (kbd "S-<f8>") 'neotree-dir) ; neotree asks for a new dir, defaults current buffer's dir
 
-(setq-default cursor-type 'bar) 
-(tool-bar-mode -1)
-(show-paren-mode)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -74,4 +70,9 @@
 
 (require 'color-theme-sanityinc-tomorrow)
 (color-theme-sanityinc-tomorrow-bright)
+
+(setq-default cursor-type 'bar) 
+(tool-bar-mode -1)
+(show-paren-mode)
+(electric-pair-mode)
 (window-divider-mode)
