@@ -71,11 +71,13 @@
 (require 'color-theme-sanityinc-tomorrow)
 (color-theme-sanityinc-tomorrow-bright)
 
-(setq-default cursor-type 'bar) 
+(setq-default cursor-type 'bar)
+(menu-bar-mode -1)
 (tool-bar-mode -1)
 (show-paren-mode)
 (electric-pair-mode)
 (window-divider-mode)
+(cua-mode)
 
 ; in mac os there's an issue regarding reading environment variables
 ; this function ensures the environemnt variables available in the shell
