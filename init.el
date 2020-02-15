@@ -37,7 +37,7 @@
  '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-    (exec-path-from-shell color-theme-sanityinc-tomorrow dracula-theme neotree company cider)))
+    (cider exec-path-from-shell color-theme-sanityinc-tomorrow dracula-theme neotree company)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -79,10 +79,10 @@
 (window-divider-mode)
 (cua-mode)
 
-; in mac os there's an issue regarding reading environment variables
-; this function ensures the environemnt variables available in the shell
-; will also be available to emacs at runtime
+; mac os related customizations
 (when (memq window-system '(mac ns x))
+  (global-set-key (kbd "<home>") 'move-beginning-of-line)
+  (global-set-key (kbd "<end>") 'move-end-of-line)
   (exec-path-from-shell-initialize))
 
 (put 'upcase-region 'disabled nil)
