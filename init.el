@@ -15,8 +15,10 @@
 
 ; bindings
 (global-set-key (kbd "TAB") #'company-indent-or-complete-common)
+(global-set-key [f7] 'buffer-menu)
 (global-set-key [f8] 'neotree-toggle) ; opens and closes neotree
 (global-set-key (kbd "S-<f8>") 'neotree-dir) ; neotree asks for a new dir, defaults current buffer's dir
+(global-set-key (kbd "s-<w>") 'kill-buffer-and-window)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
